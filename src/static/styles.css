@@ -74,6 +74,78 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.activity-participants {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid #c5cff2;
+  border-radius: 6px;
+  background-color: #eef3fc;
+}
+
+.activity-participants h5 {
+  margin-bottom: 8px;
+  color: #3949ab;
+  font-size: 1rem;
+}
+
+.activity-participants ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.activity-participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+.activity-participants li:last-child {
+  margin-bottom: 0;
+}
+
+.activity-participants .participants-empty {
+  margin-bottom: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.activity-participants .participant-remove {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #efcaca;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #b42318;
+}
+
+.activity-participants .participant-remove:hover:not(:disabled) {
+  border-color: #b42318;
+  background-color: #fff0ee;
+}
+
+.activity-participants .participant-remove:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.participant-remove svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
